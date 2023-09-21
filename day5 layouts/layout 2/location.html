@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+</head>
+
+<body>
+    <h2>Get geo location</h2>
+    <button onclick="geoLocation()">get location</button>
+    <p>location:
+    <p id="loca"></p>
+    </p>
+    <script>
+        let geoloca = document.getElementById("loca");
+        let local = document.getElementById("soso")
+        function geoLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.watchPosition((e)=>{
+                    geoloca.innerHTML= "lo"
+                })
+            } else {
+                geoloca.innerHTML = "geolocation option is not supported"
+            }
+
+        }
+
+
+
+       
+
+    </script>
+</body>
+
+</html>

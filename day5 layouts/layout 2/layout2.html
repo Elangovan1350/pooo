@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 2</title>
+    <style>
+      body {
+        height: 100vh;
+        background-color: #3b404e;
+        padding: 0 30px;
+        color: whitesmoke;
+        text-transform: capitalize;
+      }
+      header {
+        height: 15%;
+        background-color: #8773e0;
+        margin: 30px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #div1 {
+        height: 60%;
+        margin: 30px 15px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      aside {
+        height: 95%;
+        background-color: #60C4BB;
+        flex-grow: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #div2 {
+        height: 100%;
+       
+        flex-grow: 5;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      #content1{
+        background-color: #427BE9;
+        flex-basis: 95%;
+
+        height: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #content2{
+        background-color: #55A7FB;
+        flex-basis: 42.5%;
+        height: 45%;
+        margin-right: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #content3{
+        background-color: #4570E5;
+        flex-basis: 42.5%;
+        height: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      footer{
+        height: 15%;
+        margin: 30px 15px;
+
+        background: #8570E0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>header</header>
+    <div id="div1">
+      <aside>asider</aside>
+      <div id="div2">
+        <div id="content1">content 1</div>
+        <div id="content2">content 2</div>
+        <div id="content3">content 3</div>
+      </div>
+    </div>
+    <footer>footer</footer>
+  </body>
+</html>
